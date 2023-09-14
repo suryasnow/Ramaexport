@@ -74,3 +74,10 @@ jobs:
     #     steps:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
+    fail:
+    - name: A/B Check
+  if: ${{ envA }} != ${{ envB }}
+  uses: actions/github-script@v3
+  with:
+    script: |
+        core.setFailed('envA and envB are not equivalent!')
