@@ -75,7 +75,7 @@ jobs:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
     postdeploy:
-           steps:
+        steps:
               - name: A/B Check
                 if: 1 != 2
                 run: |
