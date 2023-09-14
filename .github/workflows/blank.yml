@@ -77,7 +77,7 @@ jobs:
     postdeploy:
            steps:
               - name: A/B Check
-                if: '1' != '2'
+                if: 1 != 2
                 run: |
                     echo "::error file={name},line={line},endLine={endLine},title={title}::{message}"
                     exit 1
