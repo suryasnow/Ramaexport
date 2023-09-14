@@ -74,7 +74,7 @@ jobs:
     #     steps:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
-     postdeploy:
+    postdeploy:
            steps:
   - name: A/B Check
     if: ${{ envA }} != ${{ envB }}
