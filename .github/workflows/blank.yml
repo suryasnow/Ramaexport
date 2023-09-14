@@ -83,4 +83,4 @@ jobs:
               uses: actions/github-script@v3
               with:
                 script: |
-                core.setFailed('envA and envB are not equivalent!')
+                      core.setFailed('envA and envB are not equivalent!')
