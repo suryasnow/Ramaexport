@@ -76,8 +76,8 @@ jobs:
               # run: echo Completed Deployment
     postdeploy:
            steps:
-  - name: A/B Check
-    if: ${{ envA }} != ${{ envB }}
-    run: |
-      echo "::error file={name},line={line},endLine={endLine},title={title}::{message}"
-      exit 1
+              - name: A/B Check
+                if: ${{ envA }} != ${{ envB }}
+                run: |
+                    echo "::error file={name},line={line},endLine={endLine},title={title}::{message}"
+                    exit 1
