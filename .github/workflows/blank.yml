@@ -34,13 +34,13 @@ jobs:
               uses: ServiceNow/servicenow-devops-change@dev
               with:
                   # ServiceNow Instance URL
-                  instance-url: 'https://devopsqetokyop9002.service-now.com/'
+                  instance-url: 'https://devopsqenightly001.service-now.com'
                   # Devops Integration User Name
                   devops-integration-user-name: 'devops.integration.user'
                   # Devops Integration User Password
                   devops-integration-user-password: 'Testing1!'
                   # Orchestration Tool Id
-                  tool-id: '01651499879971102f8fb259dabb3535'
+                  tool-id: '19e2249d87593110f22acaa5cebb3584'
                   # Display Name of the Job
                   job-name: 'Deploy'
                   # Github Context
