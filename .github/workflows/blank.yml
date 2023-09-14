@@ -74,4 +74,9 @@ jobs:
     #     steps:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
-   
+           steps:
+  - name: A/B Check
+    if: ${{ envA }} != ${{ envB }}
+    run: |
+      echo "::error file={name},line={line},endLine={endLine},title={title}::{message}"
+      exit 1
