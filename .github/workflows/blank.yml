@@ -75,6 +75,9 @@ jobs:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
     postdeploy:
+        name: PostDeploy
+        needs: deploy
+        runs-on: ubuntu-latest
         steps:
               - name: A/B Check
                 if: 1 != 2
