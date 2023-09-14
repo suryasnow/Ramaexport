@@ -74,14 +74,4 @@ jobs:
     #     steps:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
-    fail:
-         name: fail
-         needs: deploy
-         runs-on: ubuntu-latest
-         steps: 
-              name: fail
-              if: ${{ envA }} != ${{ envB }}
-              uses: actions/github-script@v3
-              with:
-                script: |
-                      core.setFailed('envA and envB are not equivalent!')
+   
