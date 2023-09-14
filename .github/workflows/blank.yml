@@ -36,9 +36,9 @@ jobs:
                   # ServiceNow Instance URL
                   instance-url: 'https://devopsqetokyop9002.service-now.com/'
                   # Devops Integration User Name
-                  devops-integration-user-name: 
+                  devops-integration-user-name: 'devops.integration.user'
                   # Devops Integration User Password
-                  devops-integration-user-password: 
+                  devops-integration-user-password: 'Testing1!'
                   # Orchestration Tool Id
                   tool-id: '7c4c041d875971102f8fb259dabb35ea'
                   # Display Name of the Job
