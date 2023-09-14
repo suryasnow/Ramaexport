@@ -75,10 +75,11 @@ jobs:
     #         - name: Run deployment scripts
               # run: echo Completed Deployment
     fail:
-         name: Post Deploy
+         name: fail
          needs: deploy
          runs-on: ubuntu-latest
-         steps:  
+         steps: 
+              name: fail
               if: ${{ envA }} != ${{ envB }}
               uses: actions/github-script@v3
               with:
